@@ -27,6 +27,15 @@ package abstractfactordesignpattern;
          this.years = years;
      }
 
+     public Bank getBank() {
+         return bank;
+     }
+
+     public void setBank(Bank bank) {
+         this.bank = bank;
+     }
+
+     private Bank bank;
      private double loanAmount;
     private int years;
 
@@ -38,6 +47,6 @@ package abstractfactordesignpattern;
         double monthyInterestRate=getInterestRate()/1200;
         EMI=((monthyInterestRate*Math.pow((1+monthyInterestRate),n))/((Math.pow((1+monthyInterestRate),n))-1))*getLoanAmount();
 
-        System.out.println("your monthly EMI is "+ EMI +" for the amount"+getLoanAmount()+" you have borrowed");
+        System.out.println("your monthly EMI is "+ EMI +" for the amount "+getLoanAmount()+" you have borrowed from " + getBank().getName() +" at the interest rate of "+ getInterestRate() +"\n");
     }
 }
