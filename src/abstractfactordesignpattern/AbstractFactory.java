@@ -1,8 +1,7 @@
 package abstractfactordesignpattern;
 
- interface AbstractFactory {
+ public class AbstractFactory {
+    BankFactory bankFactory;
+    LoanFactory loanFactory;
 
-
-     Bank createBank();
-     Loan createLoan(Bank bank, double loanAmount, int years);
  }

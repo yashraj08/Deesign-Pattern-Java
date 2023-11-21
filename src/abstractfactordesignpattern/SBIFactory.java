@@ -8,8 +8,5 @@ public class SBIFactory extends BankFactory{
         return new SBIBank();
     }
 
-    @Override
-    public Loan createLoan(Bank bank, double loanAmount, int years) {
-        return null;
-    }
+
 }

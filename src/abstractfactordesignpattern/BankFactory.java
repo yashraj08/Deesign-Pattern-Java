@@ -1,6 +1,6 @@
 package abstractfactordesignpattern;
 
- abstract class BankFactory implements AbstractFactory{
+ abstract class BankFactory {
 
 
      abstract public Bank createBank();

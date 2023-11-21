@@ -7,8 +7,5 @@ public class ICICIFactory extends BankFactory{
         return new ICICIBank();
     }
 
-    @Override
-    public Loan createLoan(Bank bank, double loanAmount, int years) {
-        return null;
-    }
+
 }
